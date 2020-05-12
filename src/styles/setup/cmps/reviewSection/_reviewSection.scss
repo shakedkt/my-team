@@ -1,0 +1,75 @@
+.review-section-wrapper {
+    background-color: #014e56;
+
+    .bg-wrapper{
+        height: 100px;
+    }
+    .bgPatternHome5 {
+        float: right;
+    }
+    
+}
+
+
+.review-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 165px;
+    text-align: center;
+
+
+
+    h1 {
+        font-size: 56px;
+        padding-bottom: 61px;
+    }
+
+    span {
+        color: #79c8c7;
+    }
+
+    img {
+        width: 70px;
+        border: 2px solid #C4FFFE;
+        border-radius: 40px;
+    }
+
+    .review-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 35px;
+    }
+
+    .review {
+        display: grid;
+        justify-items: center;
+        grid-template-rows: 2fr 1fr 1fr 1fr;
+        position: relative;
+        z-index: 1;
+        
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 20%;
+            background-image: url('../../../../images/icon-quotes.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center top;
+            z-index: 0;
+            top: -67px;
+        }
+    }
+
+    h3 {
+        font-size: 18px;
+        color: #79C8C7;
+    }
+
+    p {
+        z-index: 1;
+    }
+}
+

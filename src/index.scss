@@ -1,0 +1,63 @@
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-family: 'Livvic', sans-serif;
+
+  link {
+    color: rgb(206, 206, 206);
+    text-decoration: none;
+  }
+}
+
+
+*,
+*::before,
+*::after{box-sizing:border-box;}
+a{text-decoration:none; color:inherit; cursor:pointer;}
+button{background-color:transparent; color:inherit; border-width:0; padding:0; cursor:pointer;}
+figure{margin:0;}
+input::-moz-focus-inner {border:0; padding:0; margin:0;}
+ul, ol, dd{margin:0; padding:0; list-style:none;}
+h1, h2, h3, h4, h5, h6{margin:0; font-size:inherit; font-weight:inherit;}
+p{margin:0;}
+cite {font-style:normal;}
+fieldset{border-width:0; padding:0; margin:0;}
+
+
+button{
+ border: 1px solid #ffffff;
+ border-radius: 2rem;   
+ padding: 15px 34px;
+ font-family: 'Livvic', sans-serif;
+ font-size: 1rem;
+}
+
+/* CMPS */
+@import './styles/setup/cmps/topSection';
+@import './styles/setup/cmps/skillsDetails';
+@import './styles/setup/cmps/reviewSection/reviewSection';
+@import './styles/setup/cmps/contactSection/contactSection';
+@import './styles/setup/cmps/footerSection/footerSection';
+
+/* SETUP */
+@import './styles/setup/mixins';
+@import './styles/setup/variabels';
+@import './styles/setup/layout';
+@import './styles/setup/functions';
+
+
+/* LAYOUT */
+@import './styles/setup/cmps/reviewSection/layoutReview';
+@import './styles/setup/cmps/contactSection/laoutContact';
+@import './styles/setup/cmps/footerSection/layoutFooter';

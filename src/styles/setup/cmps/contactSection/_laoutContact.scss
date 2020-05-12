@@ -1,0 +1,28 @@
+.App {
+
+    @include for-extra-wide-layout {
+        .contact-section {
+            h2 {
+                font-size: 48px;
+            }
+        }
+    }
+
+    @include for-wide-layout {
+        .contact-section {
+
+            &:after {
+                height: 125px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+        }
+    }
+
+    @include for-medium-layout {}
+
+
+
+}

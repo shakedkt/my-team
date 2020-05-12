@@ -1,0 +1,159 @@
+.App {
+
+    @media only screen and (max-width: 1134px) {
+        .find-people {
+            align-items: inherit;
+        }
+
+
+        @include for-wide-layout {
+            .bg-wrapper {
+                height: 245px;
+                align-self: end;
+                grid-row: 1 / 2;
+        
+            }
+
+            .find-people {
+
+                div {
+                    font-size: 64px;
+                }
+            }
+
+            .skill-detayls-section {
+                grid-template-columns: 1fr;
+
+                .header {
+                    margin-bottom: 65px;
+                }
+            }
+        }
+
+        @include for-medium-layout {
+            .top-section {
+                padding: 73px 40px 0px 40px;
+
+                .bg-pattern-home {
+                    position: inherit;
+                    height: 100px;
+                    margin: 0 auto;
+                    bottom: -7px;
+                    display: block;
+                    margin-top: 100px;
+                }
+
+                &:after {
+                    display: none;
+                }
+            }
+
+            .find-people {
+
+                display: block;
+                text-align: center;
+
+                div {
+                    width: inherit;
+                }
+
+                p {
+                    width: inherit;
+                }
+            }
+
+            p::before {
+                bottom: -63px;
+            }
+
+            .skill-detayls-section {
+                padding-left: 0px;
+                padding: 0px 5px 147px 5px;
+                grid-template-columns: 1fr;
+            }
+
+            .right-section {
+                li {
+                    padding-bottom: 10px;
+                }
+
+                h2 {
+                    width: 228px;
+                }
+            }
+        }
+
+
+        @include for-narrow-layout {
+            .right-section {
+                h2 {
+                    // padding-right: 0px;
+                    padding: 0px;
+                    width: inherit;
+                    padding-bottom: 5px;
+                }
+
+                li{
+                    padding-bottom: 50px;
+                }
+            }
+
+
+            .right-section {
+                li {
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                .header {
+                    font-size: 40px;
+                }
+
+                h2 {
+                    padding-bottom: 5px;
+                }
+            }
+
+            .top-section {
+                height: 567px;
+
+                .bg-pattern-home {
+                    position: absolute;
+                    height: 100px;
+                    margin: 0 auto;
+                    bottom: 0px;
+                    display: block;
+                    // margin-top: 144px
+                }
+
+                button {
+                    display: none;
+                }
+
+                .nav-bar {
+                    justify-content: space-between;
+                    padding-bottom: 30px;
+                }
+
+                .left-side-navbar {
+                    width: inherit;
+                }
+
+                a {
+                    display: none;
+                }
+
+                .hamburger {
+                    display: inline;
+                }
+            }
+
+            .find-people {
+
+                div {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.App {
+    // @include for-wide-layout {
+        
+    // }
+
+    @include for-medium-layout {
+        .review-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 5px;
+        }
+    
+
+        .review{
+            grid-template-rows: 1fr 0.5fr 1fr;
+            row-gap: 5px;
+
+            p{
+                margin-bottom: 25px;
+            }
+        }
+
+       
+    }
+
+
+    // @include for-narrow-layout {
+      
+    // }
+}
